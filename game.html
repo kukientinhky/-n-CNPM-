@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>Account</title>
+
+    <style>
+        .price {
+            font-size: 50px;
+            text-align: center;
+            margin: 15px;
+            color: hotpink;
+            background-color: lightgrey;
+        }
+
+        .horizontal-scroll-wrapper {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        .horizontal-scroll-wrapper>div {
+            cursor: pointer;
+            flex: 0 0 auto;
+            margin-right: 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .horizontal-scroll-wrapper>div:hover {
+            transform: scale(1.1);
+        }
+
+        .card {
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand"> <img src="./images/Logo.jpg" alt="PlayTogether" height="35"
+                    width="80">PlayTogether</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#Feedbacks" class="nav-link">Give your feedbacks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Game" class="nav-link">List Game account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Netflix" class="nav-link">List Netflix account</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="d-flex justify-content-center p-3">
+            <img src="./layout/top/mariosonic.jpg" class="img-fluid">
+            <img src="./layout/top/pokemon.jpg" class="img-fluid" style="display: none;">
+            <img src="./layout/top/AC.jpg" class="img-fluid" style="display: none;">
+            <img src="./layout/top/DB.jpg" class="img-fluid" style="display: none;">
+        </div>
+
+        <h3 class="pt-3"> Top Games</h3>
+        <div>
+            <div class="horizontal-scroll-wrapper squares gap-4 p-2">
+
+                <div style="width: 18rem;">
+                    <img src="./layout/fortnite.jpg" class="img-thumbnail" alt="...">
+                </div>
+
+                <div style="width: 18rem;">
+                    <img src="./layout/GOW(2).jpg" class="img-thumbnail" alt="...">
+                </div>
+
+                <div style="width: 18rem;">
+                    <img src="./layout/pubg.jpg" class="img-thumbnail" alt="...">
+                </div>
+
+                <div style="width: 18rem;">
+                    <img src="./layout/SF.jpg" class="img-thumbnail" alt="...">
+                </div>
+
+                <div style="width: 18rem;">
+                    <img src="./layout/SM.jpg" class="img-thumbnail" alt="...">
+                </div>
+
+                <div style="width: 18rem;">
+                    <img src="./layout/WOW.jpg" class="img-thumbnail" alt="...">
+                </div>
+
+                <div style="width: 18rem;">
+                    <img src="./layout/SM1.jpg" class="img-thumbnail" alt="...">
+                </div>
+            </div>
+        </div>
+        <game>
+            <h4 class="pt-4"> Steam Account</h4>
+            <div class="row row-cols-4 justify-content-center gap-3 p-3">
+                <div class="card" style="width: 15rem;">
+                    <img src="./layout/ER.jpg" class="card-img-top p-1" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">Elden Ring</h6>
+                        <div class="d-flex gap-3">
+                            <p class="card-text">1.199.000đ</p>
+                            <p> <s style="color:dimgrey;">1.560.000đ</s> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <img src="./layout/fortnite.jpg" class="card-img-top p-1" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">Fortnite</h6>
+                        <div class="d-flex gap-3">
+                            <p class="card-text">299.000đ</p>
+                            <p> <s style="color:dimgrey;"> 600.000đ</s> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <img src="./layout/SM1.jpg" class="card-img-top p-1" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">Spiderman 2</h6>
+                        <div class="d-flex gap-3">
+                            <p class="card-text">159.000đ</p>
+                            <p> <s style="color:dimgrey;">320.000đ</s> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <img src="./layout/WOW.jpg" class="card-img-top p-1" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">World of Warcraft</h6>
+                        <div class="d-flex gap-3">
+                            <p class="card-text">209.000đ</p>
+                            <p> <s style="color:dimgrey;">300.000đ</s> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <img src="./layout/SM.jpg" class="card-img-top p-1" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">Combo Marvel's Game</h6>
+                        <div class="d-flex gap-3">
+                            <p class="card-text">1.099.000đ</p>
+                            <p> <s style="color:dimgrey;">1.890.000đ</s> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <img src="./layout/pubg.jpg" class="card-img-top p-1" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">PUBG Prime</h6>
+                        <div class="d-flex gap-3">
+                            <p class="card-text">129.000đ</p>
+                            <p> <s style="color:dimgrey;">350.000đ</s> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <img src="./layout/SF.jpg" class="card-img-top p-1" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">Street Fighter</h6>
+                        <div class="d-flex gap-3">
+                            <p class="card-text">559.000đ</p>
+                            <p> <s style="color:dimgrey;">800.000đ</s> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <img src="./layout/GOW(2).jpg" class="card-img-top p-1" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">God of War Ragnarok</h6>
+                        <div class="d-flex gap-3">
+                            <p class="card-text">899.000đ</p>
+                            <p> <s style="color:dimgrey;">1.320.000đ</s> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <img src="./layout/val.jpg" class="card-img-top p-1" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">Valorant Prime</h6>
+                        <div class="d-flex gap-3">
+                            <p class="card-text">209.000đ</p>
+                            <p> <s style="color:dimgrey;">559.000đ</s> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <img src="./layout/AC.jpg" class="card-img-top p-1" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">Combo Assassin Creed's Game</h6>
+                        <div class="d-flex gap-3">
+                            <p class="card-text">1.119.000đ</p>
+                            <p> <s style="color:dimgrey;">1.850.000đ</s> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </game>
+        <netflix>
+            <h4 class="pt-4"> Netflix Account</h4>
+            <div class="row row-cols-4 justify-content-center gap-3 p-3">
+                <div class="card" style="width: 15rem;">
+                    <img src="./layout/netflix/netflix1m.jpg" class="card-img-top p-1" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">Netflix Account Premium 1 month</h6>
+                        <div class="d-flex gap-3">
+                            <p class="card-text">89.000đ</p>
+                            <p> <s style="color:dimgrey;">250.000đ</s> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <img src="./layout/netflix/netflix3m.jpg" class="card-img-top p-1" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">Netflix Account Premium 3 months</h6>
+                        <div class="d-flex gap-3">
+                            <p class="card-text">259.000đ</p>
+                            <p> <s style="color:dimgrey;">780.000đ</s> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <img src="./layout/netflix/netflix6m.jpg" class="card-img-top p-1" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">Netflix Account Premium 6 months</h6>
+                        <div class="d-flex gap-3">
+                            <p class="card-text">259.000đ</p>
+                            <p> <s style="color:dimgrey;">1.550.000đ</s> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <img src="./layout/netflix/prime.png" class="card-img-top p-1" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">Prime Video Account 1 month</h6>
+                        <div class="d-flex gap-3">
+                            <p class="card-text">89.000đ</p>
+                            <p> <s style="color:dimgrey;">180.000đ</s> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                    <img src="./layout/netflix/disney.jpg" class="card-img-top p-1" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">Disney+ Account 1 month</h6>
+                        <div class="d-flex gap-3">
+                            <p class="card-text">69.000đ</p>
+                            <p> <s style="color:dimgrey;">120.000đ</s> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </netflix>
+
+    </div>
+
+    <footer class="p-5 bg-dark text-center text-white position-relative ">
+        <div class="container">
+            <p>Partner</p>
+            <img src="Netflix.jpg" alt="PlayTogether" height="125" width="200">
+            <img src="steam.jpg" alt="PlayTogether" height="125" width="200">
+        </div>
+        <div class="container">
+            <p class="lead">Copyright @ 2023 | PlayTogether</p>
+        </div>
+    </footer>
+
+    <script>
+        const images = document.querySelectorAll('.d-flex img');
+        let currentImageIndex = 0;
+
+        function showNextImage() {
+            images[currentImageIndex].style.display = 'none';
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            images[currentImageIndex].style.display = 'block';
+        }
+
+        setInterval(showNextImage, 3000);
+    </script>
+</body>
+
+</html>
